@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Nikita Soans - Dermatologist</title>
+  <meta name="description" content="Consult Dr. Nikita Soans, Board-Certified Dermatologist in Bengaluru, for expert skincare, hair restoration, laser treatments, and aesthetic procedures. Book a consultation today!">
+  <meta name="keywords" content="Dr Nikita Soans, Dermatologist Bengaluru, Skin Specialist Bangalore, Acne Treatment, Anti-aging Treatments, Hair Loss Treatments, Laser Dermatology">
+  <meta name="author" content="Dr. Nikita Soans">
+  <meta property="og:title" content="Dr. Nikita Soans - Best Dermatologist in Bengaluru">
+  <meta property="og:description" content="Transform your skin with expert care from Dr. Nikita Soans. Personalized skin, hair, and laser treatments. Book your consultation today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/">
+  <meta property="og:image" content="https://yourwebsite.com/your-image.jpg">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourwebsite.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #4a4a4a;
+    }
+    header {
+      background: #ffffff;
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #777;
+    }
+    nav {
+      background: #fdf6f0;
+      padding: 10px 20px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: #8a6d3b;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section p {
+      text-align: justify;
+      line-height: 1.8;
+    }
+    h2 {
+      color: #8a6d3b;
+      margin-bottom: 20px;
+    }
+    ul {
+      line-height: 2;
+      padding-left: 20px;
+    }
+    ul li::before {
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-right: 10px;
+      color: #8a6d3b;
+    }
+    .cta2 {
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .cta2 button {
+      flex: 1 1 200px;
+      min-width: 200px;
+      max-width: 300px;
+      background: transparent;
+      color: #8a6d3b;
+      border: 2px solid #d7b98c;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .cta2 button:hover {
+      background: #d7b98c;
+      color: #fff;
+    }
+    .toast {
+      visibility: hidden;
+      min-width: 250px;
+      margin-left: -125px;
+      background-color: #8a6d3b;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      padding: 16px;
+      position: fixed;
+      z-index: 1;
+      left: 50%;
+      bottom: 30px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.5s, bottom 0.5s;
+    }
+    .toast.show {
+      visibility: visible;
+      opacity: 1;
+      bottom: 50px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float i {
+      margin-top: 16px;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    @media (max-width: 768px) {
+      nav a {
+        margin: 8px;
+        font-size: 0.9rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dr. Nikita Soans</h1>
+  <p>Board-Certified Dermatologist</p>
+  <p>MBBS, MD (Dermatology), DNB (Dermatology), Fellowship in Dermatosurgery.</p>
+  <section id="contact" class="cta2">
+    <button onclick="showToast(); setTimeout(() => window.location.href='https://wa.me/917985819243', 150)">WhatsApp Appointment</button>
+    <button onclick="window.location.href='tel:+917985819243'"><i class="fas fa-phone" style="margin-right: 8px;"></i>Call: +91 79858 19243</button>
+  </section>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Dr. Nikita Soans</h2>
+  <p>Dr. Nikita Soans is a distinguished dermatologist with over 8 years of experience in treating various skin, hair, and nail conditions. She has performed over 4000+ dermato-surgical procedures and is known for her precision, innovation, and personalized care approach.</p>
+</section>
+
+<section id="expertise">
+  <h2>Areas of Expertise</h2>
+  <ul>
+    <li>Aesthetic Dermatology: Botox, Fillers, Chemical Peels, Laser Treatments</li>
+    <li>Medical Dermatology: Acne, Pigmentation, Eczema, Psoriasis, Vitiligo</li>
+    <li>Dermatosurgery: Scar Revision, Mole Removal, Nail Surgeries</li>
+    <li>Hair and Scalp Treatments: PRP Therapy, Hair Loss Management, Hair Transplant Guidance</li>
+    <li>Laser Procedures: Laser Hair Removal, Tattoo Removal, Skin Rejuvenation</li>
+    <li>Stretch Marks Reduction and Under-Eye Treatments</li>
+    <li>Vitiligo Management: Medical and Surgical</li>
+    <li>Skin Allergy Management and Dermatology Consultations</li>
+    <li>Anti-Aging: Thread Lifts, Skin Tightening Procedures</li>
+  </ul>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Comprehensive Acne Management and Scar Revision</li>
+    <li>Hydrafacial and Medical Facials for Skin Glow</li>
+    <li>Skin Rejuvenation & Anti-Aging Treatments</li>
+    <li>Laser Hair Removal & Skin Resurfacing</li>
+    <li>Hair Restoration (PRP, Mesotherapy) and Hair Transplant Advice</li>
+    <li>Post-Pregnancy Skin and Hair Recovery Solutions</li>
+    <li>Botox, Dermal Fillers, Non-Surgical Facelifts</li>
+    <li>Stretch Marks, Cellulite, and Double Chin Reduction</li>
+    <li>Under-Eye Dark Circles Correction</li>
+  </ul>
+</section>
+
+<section id="testimonials">
+  <h2>Patient Testimonials</h2>
+  <p>"I’ve been consulting Dr. Nikita for my acne treatment and have seen visible results. Her approach is thorough and personalized — highly recommend!"</p>
+  <p><em>- Ruth</em></p>
+</section>
+
+<section id="contact" class="cta2">
+  <button onclick="showToast(); setTimeout(() => window.location.href='https://wa.me/917985819243', 150)">WhatsApp Appointment</button>
+  <button onclick="window.location.href='tel:+917985819243'"><i class="fas fa-phone" style="margin-right: 8px;"></i>Call: +91 79858 19243</button>
+</section>
+
+<a href="https://wa.me/917985819243" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<div id="toast" class="toast">Thank you! Opening WhatsApp...</div>
+
+<script>
+  function showToast() {
+    var x = document.getElementById("toast");
+    x.className = "toast show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2500);
+  }
+</script>
+
+<footer style="text-align: center; font-size: 0.8rem; color: #aaa; padding: 20px 10px;">
+  &copy; 2025 Dr. Nikita Soans. All Rights Reserved.
+</footer>
+
+<script>
+  function showToast() {
+    var x = document.getElementById("toast");
+    x.className = "toast show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2500);
+  }
+</script>
+
+</body>
+</html>
